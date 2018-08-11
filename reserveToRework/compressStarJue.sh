@@ -10,7 +10,6 @@
 #--
 
 
-
 ##shStyle ###
 
 # 設定
@@ -27,5 +26,6 @@ filename=""
 for filename in `ls -1 "$conf_fromDirname"`
 do
     sh "$conf_compressTool" "${conf_fromDirname}/${filename}" "${conf_toDirname}/${filename}"
+    sleep 1.6
 done
 
